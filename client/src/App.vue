@@ -1,17 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+  <div id="app" class="container mx-auto">
+<div class="flex flex-col bg-transparent">
+  <div class="text-black-700 text-center bg-blue-500 bg-opacity-25 px-4 py-2 m-2">
+    <Account />
+
+  </div>
+  <div class="text-gray-700 text-center bg-blue-500 bg-opacity-25 px-4 py-2 m-2">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  </div>
+  <router-view />
+    
+</div>
+
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Account from './components/Account.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Account
   }
 }
 </script>

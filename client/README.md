@@ -1,4 +1,4 @@
-# client
+# dappui
 
 ## Project setup
 ```
